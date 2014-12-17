@@ -1,0 +1,218 @@
+*, *:after, *:before { border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+
+a {
+	color: #4f7f90;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #39545e;
+}
+
+section {
+	padding: 1em;
+	text-align: center;
+}
+
+
+/*---------------GENERAL STYLINGS END--------------------*/
+
+/*---------------COMPONENT STYLING BEGINS--------------------*/
+
+.grid {
+	overflow: hidden;
+  	max-width: 1680px;
+  	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	margin: -0.2em;
+	width: 25.1%;
+	max-height: 250px;
+	background: black;
+	text-align: center;
+	cursor: pointer;
+	transition: margin 1.2s, min-width .8s;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.grid figure a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	line-height: 1.1em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+	
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: .5em;
+}
+
+/* Individual effects */
+
+/*TILE OVERLAY*/
+figure.effect-lily img {
+	width: -webkit-calc(100% + 50px);
+	width: calc(100% + 50px);
+	opacity: .7; 
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-40px,-50px, 0);
+	transform: translate3d(-40px,-50px,0);
+}
+
+figure.effect-lily img.dark {
+	width: -webkit-calc(100% + 50px);
+	width: calc(100% + 50px);
+	opacity: .2; 
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-40px,-50px, 0);
+	transform: translate3d(-40px,-50px,0);
+}
+
+/*TILE CAPTION*/
+figure.effect-lily figcaption {
+	top: auto;
+	bottom: 0;
+	height: 100%;
+	text-align: center;  /*CHOOSES CAPTION SIDE*/
+}
+
+
+figure.effect-lily h2,
+figure.effect-lily p {
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+/*Caption Header*/
+figure.effect-lily h2 {
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+}
+
+/*Caption Text*/
+figure.effect-lily p {
+	color: rgba(255,255,255,0.6);
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover p {
+	opacity: 1;
+}
+
+figure.effect-lily:hover img {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-lily:hover h2,
+figure.effect-lily:hover p {
+	background-color: rgba(0,0,0,0.7);
+	padding: 10px;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-lily:hover p {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+	-webkit-transition-duration: 0.6s;
+	transition-duration: 0.6s;
+}
+
+
+
+/*---------------------MEDIA QUERIES BEGIN------------------------*/
+
+
+@media screen and (max-width: 69.5em) {
+	.grid figure {
+		width: 45%;
+		min-width: 40%;
+		margin: 10px 10px 10px 10px;
+	}	
+
+	.grid figure figcaption {
+		font-size: 90%;
+	}
+}
+
+
+@media screen and (max-width: 41.5em) {
+
+	.grid figure {
+		min-width: 100%;
+		margin: 10px 0 10px 0;
+	}
+}
+
+@media screen and (max-width: 25em) {
+
+	.codrops-header {
+		font-size: 75%;
+	}
+
+}
