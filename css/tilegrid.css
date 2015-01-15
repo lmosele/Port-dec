@@ -102,8 +102,7 @@ section {
 }
 
 .grid figure p {
-	letter-spacing: 1px;
-	font-size: .5em;
+	font-size: .7em;
 }
 
 /* Individual effects */
@@ -198,6 +197,11 @@ figure.effect-lily:hover p {
 	.grid figure figcaption {
 		font-size: 90%;
 	}
+
+	.grid figure p {
+		letter-spacing: 1px;
+		font-size: .9em;
+}
 }
 
 
@@ -207,12 +211,18 @@ figure.effect-lily:hover p {
 		min-width: 100%;
 		margin: 10px 0 10px 0;
 	}
+
+	.grid figure p {
+		letter-spacing: 1px;
+		font-size: .8em;
+}
 }
 
 @media screen and (max-width: 25em) {
 
-	.codrops-header {
-		font-size: 75%;
-	}
+	.grid figure p {
+	letter-spacing: 1px;
+	font-size: .9em;
+}
 
 }
