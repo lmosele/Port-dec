@@ -37,7 +37,7 @@ body {
 	z-index: 0;
 	height:100vh;
 	min-height: 580px;
-	max-height: 950px;
+	max-height: 750px;
 	padding-bottom: 218px;
 	background: url(../img/img_7897.jpg);
 	background-position: 50% 50%;
@@ -51,9 +51,23 @@ body {
 	z-index: 0;
 	height:100vh;
 	min-height: 580px;
-	max-height: 950px;
+	max-height: 750px;
 	padding-bottom: 218px;
 	background: url(../img/about2.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	text-align: center;
+	background-attachment: fixed;
+}
+
+.banner .allcellssplash {
+	padding-top: 0px;
+	z-index: 0;
+	height:100vh;
+	min-height: 580px;
+	max-height: 750px;
+	padding-bottom: 218px;
+	background: url(../img/allcells/allcells_splash.jpg);
 	background-position: 50% 50%;
 	background-size: cover;
 	text-align: center;
@@ -65,7 +79,7 @@ body {
 	z-index: 0;
 	height:100vh;
 	min-height: 580px;
-	max-height: 950px;
+	max-height: 750px;
 	padding-bottom: 218px;
 	background: url(../img/morev/morevsplash.jpg);
 	background-position: 50% 50%;
@@ -74,14 +88,44 @@ body {
 	background-attachment: fixed;
 }
 
+.banner .jmksplash {
+	padding-top: 0px;
+	z-index: 0;
+	height:100vh;
+	min-height: 580px;
+	max-height: 750px;
+	padding-bottom: 218px;
+	background: url(../img/jmk/jmksplash.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	text-align: center;
+	background-attachment: fixed;
+}
+
+
 .banner .personalbrandsplash {
 	padding-top: 0px;
 	z-index: 0;
 	height:100vh;
 	min-height: 580px;
-	max-height: 950px;
+	max-height: 750px;
 	padding-bottom: 218px;
 	background: url(../img/personalbrand/brandsplash.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	text-align: center;
+	background-attachment: fixed;
+}
+
+
+.banner .maxicosisplash {
+	padding-top: 0px;
+	z-index: 0;
+	height:100vh;
+	min-height: 580px;
+	max-height: 750px;
+	padding-bottom: 218px;
+	background: url(../img/maxicosi/maxicosisplash.jpg);
 	background-position: 50% 50%;
 	background-size: cover;
 	text-align: center;
@@ -93,7 +137,7 @@ body {
 	z-index: 0;
 	height:100vh;
 	min-height: 580px;
-	max-height: 950px;
+	max-height: 750px;
 	padding-bottom: 218px;
 	background: url(../img/salt/saltsplash.jpg);
 	background-position: 50% 50%;
@@ -108,7 +152,7 @@ body {
 	z-index: 0;
 	height:100vh;
 	min-height: 580px;
-	max-height: 950px;
+	max-height: 750px;
 	padding-bottom: 218px;
 	background: url(../img/trellis/trellissplash.gif);
 	background-position: 50% 50%;
@@ -123,7 +167,7 @@ body {
 	z-index: 0;
 	height:100vh;
 	min-height: 580px;
-	max-height: 950px;
+	max-height: 750px;
 	padding-bottom: 218px;
 	background: url(../img/folwd/folwdsplash.jpg);
 	background-position: 50% 50%;
@@ -220,6 +264,8 @@ body {
 
 
 /*---------------------END------------------------*/
+
+
 
 .breather {
 	position: relative;
