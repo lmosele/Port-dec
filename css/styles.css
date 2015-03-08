@@ -54,7 +54,7 @@ body {
 	max-height: 750px;
 	padding-bottom: 218px;
 	background: url(../img/about2.jpg);
-	background-position: 50% 50%;
+	background-position: center;
 	background-size: cover;
 	text-align: center;
 	background-attachment: fixed;
@@ -132,6 +132,21 @@ body {
 	background-attachment: fixed;
 }
 
+.banner .tabulasplash {
+	padding-top: 0px;
+	z-index: 0;
+	height:100vh;
+	min-height: 580px;
+	max-height: 750px;
+	padding-bottom: 218px;
+	background: url(../img/tabula/tabula_splash.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	text-align: center;
+	background-attachment: fixed;
+
+}
+
 .banner .saltsplash {
 	padding-top: 0px;
 	z-index: 0;
@@ -140,6 +155,20 @@ body {
 	max-height: 750px;
 	padding-bottom: 218px;
 	background: url(../img/salt/saltsplash.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	text-align: center;
+	background-attachment: fixed;
+
+}
+.banner .saltconceptsplash {
+	padding-top: 0px;
+	z-index: 0;
+	height:100vh;
+	min-height: 580px;
+	max-height: 750px;
+	padding-bottom: 218px;
+	background: url(../img/salt/saltconceptsplash.jpg);
 	background-position: 50% 50%;
 	background-size: cover;
 	text-align: center;
